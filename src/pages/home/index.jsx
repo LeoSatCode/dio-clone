@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Banner from '../../assets/images/banner.png'
 
 import { Button } from "../../components/button"
@@ -12,6 +12,13 @@ import {
 } from '../home/styles'
 
 const Home = () => {
+
+  const navigate = useNavigate()
+
+  const handleClickSignIn = () => {
+    navigate('/login')
+  }
+
   return (
     <>
       <Header />
@@ -28,7 +35,7 @@ const Home = () => {
               domine as tecnologias utilizadas pelas empresas mais inovadoras do Mundo e encare seu novo
                 desafio profissional. evoluindo em comunidade com os melhores experts.
             </TextContent>
-              <Button title="Começar agora" variant="secondary" onClick={()=> null}/>
+              <Button title="Começar agora" variant="secondary" onClick={handleClickSignIn}/>
 
         </div>
         <div>
