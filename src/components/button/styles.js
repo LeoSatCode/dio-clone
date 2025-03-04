@@ -27,7 +27,7 @@ export const ButtonContainer = styled.button`
         &::after {
             content: '';
             position: absolute;
-            top: -2.5px;
+            top: -3px;
             left: -3px;
             width: calc(100% + 2px);
             height: calc(100% + 2px);

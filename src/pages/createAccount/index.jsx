@@ -16,8 +16,11 @@ import {
   Colunm,
   Row,
   Title,
-  TitleLogin,
-  SubTitleLogin,
+  TitleAccount,
+  SubTitleAccount,
+  BottomAccount,
+  BottomLogin,
+  BottomLink
 } from "./styles";
 
 
@@ -82,8 +85,8 @@ const CreateAccount = () => {
         </Colunm>
         <Colunm>
           <Wrapper>
-            <TitleLogin>Comece agora grátis</TitleLogin>
-            <SubTitleLogin>Crie sua conta e make the change._</SubTitleLogin>
+            <TitleAccount>Comece agora grátis</TitleAccount>
+            <SubTitleAccount>Crie sua conta e make the change._</SubTitleAccount>
             <form onSubmit={handleSubmit(onSubmit)}>
               <Input
                 name="nome"
@@ -107,9 +110,14 @@ const CreateAccount = () => {
                 leftIcon={<MdLock />}
                 errorMessage={errors?.password?.message}
               />
-              <Button title="Cadastrar" variant="secondary" type="submit" />
+              <Button title="Criar minha conta" variant="secondary" type="submit" />
             </form>
             <Row>
+            </Row>
+            <BottomAccount>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</BottomAccount>
+            <Row>
+            <BottomLogin>Já tenho conta.</BottomLogin>
+            <BottomLink href="/login">Fazer login</BottomLink>
             </Row>
           </Wrapper>
         </Colunm>

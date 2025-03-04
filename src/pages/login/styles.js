@@ -35,7 +35,7 @@ export const Title = styled.h2`
     font-weight: 700;
     font-size: 32px;
     width: 320px;
-    margin-bottom: 20px;
+    margin-top: 6px;
     line-height: 44px;
 
     color: #FFFFFF;
@@ -65,16 +65,19 @@ export const ForgottText = styled.p`
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-
+    margin-bottom: 50px;
     color: #E5E044;
 `;
 
-export const CreateText = styled.p`
+export const CreateText = styled.a`
     font-family: 'Open-Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 50px;    
+    cursor: pointer;
+    text-decoration: none;
 
     color: #E23DD7;
 `;

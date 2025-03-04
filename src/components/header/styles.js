@@ -22,6 +22,10 @@ export const Column = styled.div`
     align-items: center;
 `;
 
+export const HeaderImg = styled.img`
+    cursor: pointer;
+`;
+
 export const Wrapper = styled.div`
     background-color: #151515;
     width: 100%;
